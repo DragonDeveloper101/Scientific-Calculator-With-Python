@@ -10,9 +10,8 @@ def brackets_valid(string):
         "]": "["
         }
     stack = deque()
-
-    # if string[0] not in brackets.values(): return False
-
+    
+    # Loop through each character of the string (or any iterable)
     for bracket in string:
         if bracket in brackets.values():
             stack.appendleft(bracket)
