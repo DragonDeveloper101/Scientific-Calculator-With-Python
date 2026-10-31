@@ -28,13 +28,3 @@ def brackets_valid(string):
         return False
 
     return True
-
-
-while True:
-    inp = input("Enter string of brackets: ")
-    if inp == -1:
-        break
-    elif brackets_valid(inp):
-        print("Brackets are valid")
-    else:
-        print("Brackets not valid")
